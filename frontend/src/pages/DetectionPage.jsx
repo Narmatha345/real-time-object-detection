@@ -36,7 +36,14 @@ export default function DetectionPage() {
         <ErrorBanner error={{ type: "backend", message: "Backend unavailable" }} />
       )}
 
-      <CameraView videoRef={videoRef} status={status} detections={detections} frameSize={frameSize} />
+      <CameraView
+        videoRef={videoRef}
+        status={status}
+        detections={detections}
+        frameSize={frameSize}
+        onSwitchCamera={switchCamera}
+        canSwitchCamera={canSwitchCamera}
+      />
 
       <DetectionList detections={detections} status={status} />
 

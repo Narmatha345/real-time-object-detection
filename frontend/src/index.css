@@ -90,6 +90,29 @@ body {
   pointer-events: none;
 }
 
+.flip-icon-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(11, 15, 20, 0.55);
+  backdrop-filter: blur(4px);
+  color: var(--text);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.flip-icon-btn:active {
+  transform: scale(0.92);
+}
+
 .camera-placeholder {
   position: absolute;
   inset: 0;
