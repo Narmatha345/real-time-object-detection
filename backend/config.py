@@ -15,7 +15,7 @@ MODELS_DIR = BASE_DIR / "models"
 # To use a custom-trained model later (e.g. waste-classification classes:
 # plastic, glass, metal, paper, organic, electronic), point this at your
 # own best.pt - the detector, API and frontend all stay unchanged.
-MODEL_PATH = str(MODELS_DIR / "yolo11n.pt")
+MODEL_PATH = str(MODELS_DIR / "yolo11s.pt")
 
 # Inference settings
 DEFAULT_CONFIDENCE_THRESHOLD = 0.50
