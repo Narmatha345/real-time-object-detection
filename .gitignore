@@ -1,0 +1,21 @@
+# Python
+backend/__pycache__/
+backend/**/__pycache__/
+backend/venv/
+backend/.venv/
+*.pyc
+
+# YOLO weights (auto-downloaded)
+backend/models/*.pt
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Env
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
