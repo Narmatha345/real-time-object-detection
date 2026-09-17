@@ -15,7 +15,7 @@ export const STATUS = {
   ERROR: "error",
 };
 
-export function useObjectDetection(defaultConfidence = 0.5) {
+export function useObjectDetection(defaultConfidence = 0.65) {
   const [status, setStatus] = useState(STATUS.IDLE);
   const [error, setError] = useState(null);
   const [detections, setDetections] = useState([]);

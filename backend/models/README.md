@@ -1,11 +1,16 @@
 # Models directory
 
-`yolo11s.pt` (the pretrained, COCO-trained Ultralytics YOLO11 "small" model)
+`yolo11n.pt` (the pretrained, COCO-trained Ultralytics YOLO11 "nano" model)
 is downloaded here automatically the first time the backend starts, so it
-does not need to be committed to the repo. It trades some speed for
-noticeably better accuracy than the "nano" variant - see `MODEL_PATH` in
-[`../config.py`](../config.py) to switch back to `yolo11n.pt` if you need
-faster, less accurate inference instead.
+does not need to be committed to the repo.
+
+Nano is the fastest, least accurate variant - chosen here because the
+free-tier deployment CPU is slow enough that a bigger model (`yolo11s.pt`,
+`yolo11m.pt`, ...) pushes inference past what feels "live" (tested at
+~64s/frame for `yolo11s` vs ~21s/frame for `yolo11n` on Render's free
+plan). If you deploy on hardware with real CPU/GPU power, switch
+`MODEL_PATH` in [`../config.py`](../config.py) to a bigger variant for
+better accuracy.
 
 ## Using your own custom-trained model later
 

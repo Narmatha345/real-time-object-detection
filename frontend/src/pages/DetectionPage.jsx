@@ -21,7 +21,7 @@ export default function DetectionPage() {
     stopCamera,
     switchCamera,
     clearError,
-  } = useObjectDetection(0.5);
+  } = useObjectDetection(0.65);
 
   return (
     <div className="app-shell">

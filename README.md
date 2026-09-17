@@ -95,8 +95,8 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-The first run downloads `yolo11s.pt` (the pretrained COCO model,
-~20 MB) automatically into `backend/models/`.
+The first run downloads `yolo11n.pt` (the pretrained COCO model,
+~5 MB) automatically into `backend/models/`.
 
 ### 2. Frontend
 
@@ -145,8 +145,8 @@ URL before running `npm run dev`.
 
 | Setting | File | Default |
 |---|---|---|
-| Model weights | `backend/config.py` → `MODEL_PATH` | `models/yolo11s.pt` |
-| Default confidence threshold | `backend/config.py` → `DEFAULT_CONFIDENCE_THRESHOLD` | `0.50` |
+| Model weights | `backend/config.py` → `MODEL_PATH` | `models/yolo11n.pt` |
+| Default confidence threshold | `backend/config.py` → `DEFAULT_CONFIDENCE_THRESHOLD` | `0.65` |
 | Inference image size | `backend/config.py` → `INFERENCE_IMG_SIZE` | `480` |
 | Max streamed frame size | `backend/config.py` → `MAX_INPUT_DIMENSION` | `640` |
 | Backend URL (frontend) | `frontend/.env` → `VITE_API_BASE_URL` | derived from current hostname, port `8000` |
